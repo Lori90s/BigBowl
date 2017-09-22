@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lori/OrderDetail</title>
+    <link rel="stylesheet" href="/stylesheet/order.css"/>
+</head>
+<body>
+<div class="header">
+    <img src="/images/header.png" alt="Header" style="width:1440px;height:150px;"/>
+</div>
+
+
+
+<div class = "orderDetailTable">
+    <div>
+        <table class="table-orderDetail">
+
+            <tr>
+                <th>My Orders</th>
+                <th>Status</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+
+            <tr th:each="order : ${orderdetail}">
+                <td th:text="'Order'+${order.id}">
+
+                </td>
+                <td th:text="${order.status}"></td>
+                <td th:text="${order.item.name}"></td>
+                <td th:text="${order.quantity}"></td>
+                <td th:text="${order.quantity}*${order.item.price}"></td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+
+
+
+<div class="footer">
+
+
+</div>
+
+
+<script src="/js/order.js"></script>
+</body>
+</html>

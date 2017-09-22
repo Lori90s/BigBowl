@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Restaurant/Mork</title>
+    <link rel="stylesheet" href="/stylesheet/mork.css"/>
+</head>
+<body>
+<div class="header">
+    <img src="/images/header.png" alt="Header" style="width:1440px;height:150px;"/>
+</div>
+
+<div class="restaurant">
+    <img src="/images/mork-logo.svg" alt="morklogo"/>
+</div>
+
+<div class="item1">
+    <div class = "pic">
+        <img src="/images/item1.png" alt="item1" />
+    </div>
+
+    <div class = "description">
+            <pre>
+                Mork Matcha Bowl
+
+
+
+                $12.00
+            </pre>
+    </div>
+
+    <div class="addButton">
+
+        <button class= "buttons" alt="add1" onClick="javascript:addItem1()"><img src="/images/Add Button.png"/></button>
+
+    </div>
+
+</div>
+
+<div class="item2">
+    <div class = "pic">
+        <img src="/images/item2.png" alt="item2" />
+    </div>
+
+    <div class = "description">
+            <pre>
+                Mork Hot Chocolate
+
+
+
+                $5.00
+            </pre>
+    </div>
+
+    <div class="addButton">
+
+        <button class= "buttons" alt="add2" onClick="javascript:addItem2()"><img src="/images/Add Button.png"/></button>
+
+    </div>
+</div>
+
+<div class="item3">
+    <div class = "pic">
+        <img src="/images/item3.png" alt="item3" />
+    </div>
+
+    <div class = "description">
+            <pre>
+                Mork Croissiant
+
+
+
+                $7.00
+            </pre>
+    </div>
+
+    <div class="addButton">
+
+        <button class= "buttons" alt="add3" onClick="javascript:addItem3()"><img src="/images/Add Button.png"/></button>
+
+    </div>
+</div>
+
+
+<div class = "myCart">
+    <div class = "cartLabel">
+        <h3>My Cart</h3>
+    </div>
+
+    <div class = "items">
+        <pre>Mork Hot Chocolate   $5.00</pre>
+    </div>
+
+
+    <br/>
+    <div class="product-quantity">
+        <input type="number" value="1" min="1" name="add-del2" class="add-del" id="add-del2" />
+    </div>
+
+    <br/>
+    <div class="totallabel">
+        Total
+    </div>
+    <div class="totals" id="cart-total">
+        $5
+    </div>
+
+    <button class="checkoutButton"
+            th:onclick="|checkout2()|" id="ch2">
+        Checkout</button>
+
+</div>
+
+
+<div class="footer">
+
+
+</div>
+
+<script src="/js/mork.js"></script>
+
+</body>
+</html>

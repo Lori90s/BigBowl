@@ -1,0 +1,63 @@
+
+body{
+    background-color: #34D4C9;
+}
+
+
+.logo{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+.title{
+    font-family: AmericanTypewriter;
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 34px;
+    position: absolute;
+    left: 550px;
+    top: 150px;
+
+}
+
+.restaurant{
+    position: absolute;
+    left:250px;
+    top:400px;
+}
+
+input[type=text]{
+    font-family: AmericanTypewriter;
+    background-color: white;
+    width: 85%;
+    border-radius: 4px;
+    font-size: 30px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=submit]{
+
+    background-color: #34D4C9;
+    border: 3px solid white;
+    color: white;
+    padding: 12px 32px;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    left:730px;
+    top: -70px;
+}
+
+
+
+
+
+
+
+
+
+

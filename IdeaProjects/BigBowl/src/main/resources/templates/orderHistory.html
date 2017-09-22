@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lori/OrderHistory</title>
+    <link rel="stylesheet" href="/stylesheet/orderHistory.css"/>
+</head>
+<body>
+<div class="header">
+    <img src="/images/header.png" alt="Header" style="width:1440px;height:150px;"/>
+</div>
+
+<div class = "orderTable">
+<div>
+    <table class="table-orderHistory">
+
+        <tr>
+            <th>My Orders</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        <tr th:each="order : ${orderHistory}">
+            <td>
+                    <div>
+                        <a th:text="'Order'+${order.id}"  th:onclick="|readOrder(${order.id})|" ></a>
+                    </div>
+
+            </td>
+            <td th:text="${order.status}"></td>
+            <td>
+                    <div th:if="${order.status}=='Placed'">
+                        <button class="btn cancel" th:onclick="|cancel(${order.id})|">Cancel</button>
+                    </div>
+                    <div th:unless="${order.status}=='Placed'">
+                        <button class="btn delete" th:onclick="|deleteInfo(${order.id})|">Delete</button>
+                    </div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+</div>
+
+
+
+
+<div class="footer">
+
+
+</div>
+
+
+<script src="/js/orderHistory.js"></script>
+</body>
+</html>

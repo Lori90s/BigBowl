@@ -1,0 +1,190 @@
+body{
+    background-color: white;
+}
+
+
+.header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.restaurant{
+    position: absolute;
+    top: 170px;
+    left: 600px;
+}
+
+.item1{
+    position: absolute;
+    top: 400px;
+}
+
+.pic{
+    position: absolute;
+    left: 80px;
+    width: 250px;
+    height: 250px;
+}
+
+.description{
+    position: absolute;
+    left: 230px;
+    font-family: AmericanTypewriter;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.addButton{
+    position: absolute;
+    top: 180px;
+    left: 800px;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.buttons{
+    background-color: transparent;
+    border: transparent;
+
+}
+
+.item2{
+    position: absolute;
+    top: 750px;
+    width:250px;
+    height:250px;
+}
+
+.item3{
+    position: absolute;
+    top: 1120px;
+    width:250px;
+    height:250px;
+}
+
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 280px;
+    top: 1650px;
+    left: 0px;
+    background-color: #34D4C9;
+}
+
+.myCart{
+    position: absolute;
+    width: 380px;
+    top: 400px;
+    right: 0px;
+
+    text-align: center;
+    height: 450px;
+
+    border-collapse: separate;
+    border-left: 2px double #ddd;
+    border-bottom: 2px double #ddd;
+    border-top: 2px double #ddd;
+
+
+    background-color: transparent;
+
+}
+
+.cartLabel{
+    font-family: AmericanTypewriter;
+    color: #34D4C9;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top:-10px;
+    height:30px;
+    width: 100%;
+
+}
+
+.checkoutButton{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: double;
+    align: center;
+    cursor: pointer;
+    position: absolute;
+
+    right: 60px;
+    bottom:35px;
+    width: 200px;
+    height: 50px;
+
+    font-family: AmericanTypewriter;
+    background-color: #34D4C9;
+    text-align: center;
+    border-style: hidden;
+}
+
+
+.items{
+
+    width:100%;
+    font-family: AmericanTypewriter;
+    font-size: 22px;
+    text-align: center;
+    bottom: 35px;
+}
+
+.product-quantity{
+
+
+
+    font-family: AmericanTypewriter;
+    font-size: 20px;
+    color: #34D4C9;
+
+    width:10px;
+}
+
+.totallabel{
+    font-family: AmericanTypewriter;
+    color: #34D4C9;
+    font-size: 24px;
+
+    position: relative;
+    bottom:-40px;
+
+    width: 50%;
+    left: 25px;
+    float: left;
+
+}
+
+.totals{
+    float: right;
+    position: relative;
+    bottom: -45px;
+    left:20px;
+
+    width: 50%;
+    font-family: AmericanTypewriter;
+    font-size: 18px;
+    font-style: oblique;
+
+}
+
+
+input[type="number"] {
+    position: relative;
+    right: -280px;
+    height: 10px;
+    bottom:5px;
+    width: 3em;
+    font-family: AmericanTypewriter;
+    font-size: 20px;
+    text-align: center;
+
+    height: 30px;
+
+}
+
